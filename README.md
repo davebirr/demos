@@ -6,12 +6,14 @@ This repository contains PowerShell scripts and sample data for setting up Micro
 
 ```
 ├── Scripts/
+│   ├── AI/                   # AI and Azure Cognitive Search setup scripts
 │   ├── ConditionalAccess/     # Conditional Access policy scripts
 │   ├── Intune/               # Microsoft Intune configuration scripts
 │   ├── Lab-Setup/            # General lab setup and configuration scripts
 │   ├── UserManagement/       # User and object import/management scripts
 │   └── Vendor/               # Third-party vendor scripts (Datto, Huntress, etc.)
 ├── SampleData/               # Sample CSV files for demos and testing
+│   └── UserThumbnails/       # User profile pictures (23 images) corresponding to sample users
 ├── Reports/                  # Generated reports and documentation
 ├── upload-users.ps1          # Legacy user upload script (see UserManagement folder for organized version)
 └── README.md                 # This file
@@ -31,6 +33,12 @@ This repository contains PowerShell scripts and sample data for setting up Micro
 ### Security & Compliance
 - **`Baseline-ConditionalAccessPolicies.ps1`** - Creates recommended baseline CA policies
 - **`setup-intune.ps1`** - Imports baseline Intune configurations for compliance and device management
+
+### AI & Cognitive Services
+- **`auth_init.ps1`** - Initializes Azure authentication for AI services
+- **`auth_update.ps1`** - Updates Azure authentication credentials
+- **`loadenv.ps1`** - Loads environment variables from Azure Developer CLI
+- **`prepdocs.ps1`** - Prepares documents for AI processing
 
 ## 📋 Prerequisites
 
@@ -59,8 +67,11 @@ This repository contains PowerShell scripts and sample data for setting up Micro
 
 ## 📊 Sample Data
 
-The `SampleData/` folder contains CSV files with sample user data for demos:
+The `SampleData/` folder contains CSV files and supporting assets for demos:
 - `m365bUsers.csv` - Sample users with various departments and roles
+- `UserThumbnails/` - Profile pictures for sample users (23 images)
+  - Images correspond to users in the CSV files (e.g., AlexW.jpg for Alex Wilber)
+  - Standard JPG format, suitable for M365 profile picture uploads
 
 ## ⚠️ Important Notes
 
