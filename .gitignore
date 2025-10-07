@@ -1,0 +1,33 @@
+# Secrets and sensitive files
+*.key
+*.pem
+*.pfx
+*.p12
+*.ppk
+key*.txt
+*tenant*.txt
+config.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+Untitled-*
+
+# Cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE and editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# Azure and tenant specific information
+aztenant.txt
+subscription.txt
+
+# Demo data that might contain real tenant info
+FY24Labs/Archive/*.txt
